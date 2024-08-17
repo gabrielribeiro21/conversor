@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversos de texto para audio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de <span>texto</span> para audio</h1>
+    <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+    <div id="entrada-de-conteudo">
+        <textarea placeholder="Digite alguma coisa" id="entrada-de-texto"></textarea>
+      <div>
+        <label for="uploud-arquivo" id="arquivo-label">Enviar arquivo</label>
+        <input type="file" id="uploud-arquivo" accept=".txt" />
+      </div>
+    </div>
+    <div class="acoes">
+      <div class="acao-box">
+        <p>Selecione a voz:</p>
+        <select id="selecao-voz"></select>
+      </div>
+      <div class="acao-box">
+        <p>Clique para ouvir:</p>
+        <button id="ouvir-btn">Ouvir</button>
+      </div>
+      <div class="acao-box">
+        <p>Obtenha um arquivo do conteudo:</p>
+        <button id="baixar-texto-btn">Baixar texto</button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
